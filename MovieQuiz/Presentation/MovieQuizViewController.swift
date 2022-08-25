@@ -228,3 +228,4 @@ final class MovieQuizViewController: UIViewController {
                 correctAnswer: false)] //  Настоящий рейтинг: 5,8
     }
 }
+
