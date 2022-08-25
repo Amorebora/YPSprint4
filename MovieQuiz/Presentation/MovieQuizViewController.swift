@@ -10,8 +10,8 @@ final class MovieQuizViewController: UIViewController {
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var questionNumber: UILabel!
-    @IBOutlet weak var yesButton: UIButton!
-    @IBOutlet weak var noButton: UIButton!
+    @IBOutlet private weak var yesButton: UIButton!
+    @IBOutlet private weak var noButton: UIButton!
 
     // MARK: - Properties
     
@@ -89,7 +89,6 @@ final class MovieQuizViewController: UIViewController {
         imageView.layer.masksToBounds = true // даём разрешение на рисование рамки
         imageView.layer.borderWidth = 8 // толщина рамки
         imageView.layer.borderColor = borderColor.cgColor // делаем рамку зеленой
-        imageView.layer.cornerRadius = 20 // радиус скругления углов рамки
 
         buttonsEnabled(is: false) // временно отключаем кнопки до появления следующего вопроса
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
